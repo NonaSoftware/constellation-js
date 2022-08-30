@@ -1,0 +1,28 @@
+{
+  "memory":"200",
+  "networkMode":"bridge",
+  "cpu":"128",
+  "family":"web-family",
+   "containerDefinitions": [
+       {
+           "memory": 200,
+           "portMappings": [
+               {
+                   "hostPort": 8082,
+                   "containerPort": 8082,
+                   "protocol": "tcp"
+               }
+           ],
+           "essential": true,
+           "name": "constellationjs-container",
+           "logConfiguration": {
+               "logDriver": "awslogs",
+               "options": {
+                   "awslogs-group": "/ecs/frontend-container",
+                   "awslogs-region": "us-east-1",
+                   "awslogs-stream-prefix": "constellation-js"
+               }
+           }
+       }
+   ]
+}

@@ -1,8 +1,8 @@
 # constellation-js
 
-[![Build Status](https://travis-ci.org/hicsail/constellation-js.svg?branch=master)](https://travis-ci.org/hicsail/constellation-js) [![npm version](https://badge.fury.io/js/constellation-js.svg)](https://badge.fury.io/js/constellation-js)[![Coverage Status](https://coveralls.io/repos/github/hicsail/constellation-js/badge.svg?branch=master)](https://coveralls.io/github/hicsail/constellation-js?branch=master)
+<!-- [![Build Status](https://travis-ci.org/hicsail/constellation-js.svg?branch=master)](https://travis-ci.org/hicsail/constellation-js) [![npm version](https://badge.fury.io/js/constellation-js.svg)](https://badge.fury.io/js/constellation-js)[![Coverage Status](https://coveralls.io/repos/github/hicsail/constellation-js/badge.svg?branch=master)](https://coveralls.io/github/hicsail/constellation-js?branch=master) -->
 
-### Latest stable version available at [ConstellationCAD](http://constellationcad.org/)
+### Latest stable version available at [ConstellationCAD](https://constellationcad.org/)
 
 ## Usage
 ### Requirements
@@ -11,10 +11,16 @@
 
 ### Local UI
 ```shell
-git clone git@github.com:hicsail/constellation-js.git
-npm run build && npm run start
+git clone git@github.com:NonaSoftware/constellation-js.git
+npm install && npm run build && npm run start
 ```
 Then open `http://localhost:8082/` on browser
+
+### Docker UI
+```shell
+git clone git@github.com:NonaSoftware/constellation-js.git
+docker build . -t constellation
+docker run -d -p 8082:8082 constellation:latest
 
 ### NPM Package
 
