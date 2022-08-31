@@ -558,7 +558,7 @@ $(document).ready(function() {
     //replace all spaces and special characters for SBOL
     designName = designName.replace(/[^A-Z0-9]/ig, "_");
 
-    $.post('http://localhost:8082/postSpecs', {
+    $.post('https://constellationcad.org/postSpecs', {
       "designName": designName,
       "specification": specification,
       "categories": categories,
@@ -884,7 +884,7 @@ async function processSBOL(editors, files, combineMethod, tolerance) {
   }
   // Parse SBOL and display results
   $.ajax({
-    url: 'http://localhost:8082/importSBOL',
+    url: 'http://constellationcad.org/importSBOL',
     type: 'POST',
     data: JSON.stringify(data),
     contentType: "application/json; charset=utf-8",

@@ -41,7 +41,7 @@ jobs:
           IMAGE_TAG: ${{ github.sha }}
         run: |
           # Build a docker container and push to registry
-          docker build -t nonasoftware/parchmint:$IMAGE_TAG -t ghcr.io/nonasoftware/parchmint:$IMAGE_TAG .
-          docker push nonasoftware/parchmint:$IMAGE_TAG
-          docker push ghcr.io/nonasoftware/parchmint:$IMAGE_TAG
-          echo "::set-output name=image::nonasoftware/parchmint:$IMAGE_TAG"
+          docker build -t nonasoftware/constellationjs:$IMAGE_TAG -t ghcr.io/nonasoftware/constellationjs:$IMAGE_TAG .
+          docker push nonasoftware/constellationjs:$IMAGE_TAG
+          docker push ghcr.io/nonasoftware/constellationjs:$IMAGE_TAG
+          echo "::set-output name=image::nonasoftware/constellationjs:$IMAGE_TAG"

@@ -165,9 +165,9 @@ You can learn more about how the `Nona Research Foundation` is organized and man
 
 ## help
 
-We're a community over in [Slack for help](https://join.slack.com/t/nona-network/shared_invite/zt-1etjfumia-3w4JreBT1rw_fQcPLM7dDw) and all help and support requests in an appropriate `parchmint-help` channel. We look forward to interacting with you there. 
+We're a community over in [Slack for help](https://join.slack.com/t/nona-network/shared_invite/zt-1etjfumia-3w4JreBT1rw_fQcPLM7dDw) and all help and support requests in an appropriate `constellationjs-help` channel. We look forward to interacting with you there. 
 
-Bug reports should be made on our [github issues](https://github.com/nonasoftware/parchmint/issues/new?template=bug_report.md) using
+Bug reports should be made on our [github issues](https://github.com/nonasoftware/constellation-js/issues/new?template=bug_report.md) using
 the bug report template. If you think something isn't working, don't hesitate to reach out - it is probably us and not you!
 
 ## LICENSING
