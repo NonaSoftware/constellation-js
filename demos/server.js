@@ -19,10 +19,8 @@ app.use(express.static(__dirname + '/static'));
 // app.use(express.static(__dirname + '/static/js'));
 app.use(express.static(__dirname + '/../lib/'));
 
-
 const server = app.listen(8082, "http://constellationcad.org", function () {
   console.log('Listening on constellationcad.org:%d', server.address().port);
-  console.log('http://localhost:8082/');
 });
 
 app.get('/', function(req,res) {
